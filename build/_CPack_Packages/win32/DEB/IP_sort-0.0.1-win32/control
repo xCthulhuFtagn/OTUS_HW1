@@ -1,0 +1,9 @@
+Architecture: 
+Description: IP_sort built using CMake
+Maintainer: KK
+Package: ip_sort
+Priority: optional
+Section: devel
+Version: 0.0.1
+Installed-Size: 0
+

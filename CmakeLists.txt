@@ -1,22 +1,6 @@
 cmake_minimum_required(VERSION 3.0)
 
-project(Test VERSION 0.0.1)
+project(IP_sort VERSION 0.0.1)
 
-configure_file(config.h.in  ${CMAKE_CURRENT_BINARY_DIR}/config.h)
-
-set(SOURCES main.cpp head.cpp)
-set(HEADERS head.h)
-
-add_executable(TEST ${SOURCES} ${HEADERS})
-
-set_target_properties(
-    TEST PROPERTIES
-    CXX_STANDARD 11
-    CXX_STANDARD_REQUIRED ON
-)
-
-target_include_directories(
-    TEST 
-    PRIVATE
-    ${CMAKE_CURRENT_BINARY_DIR}
-)
+add_subdirectory(lib)
+add_subdirectory(src)

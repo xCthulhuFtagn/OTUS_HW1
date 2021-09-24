@@ -86,14 +86,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\DEV\OTUS\HW1\build\CMakeFiles C:\DEV\OTUS\HW1\build\\CMakeFiles\progress.marks
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
+	cd /d C:\DEV\OTUS\HW1\build && $(CMAKE_COMMAND) -E cmake_progress_start C:\DEV\OTUS\HW1\build\CMakeFiles C:\DEV\OTUS\HW1\build\lib\\CMakeFiles\progress.marks
+	cd /d C:\DEV\OTUS\HW1\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 lib/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\DEV\OTUS\HW1\build\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 clean
+	cd /d C:\DEV\OTUS\HW1\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 lib/clean
 .PHONY : clean
 
 # The main clean target
@@ -102,44 +102,56 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 preinstall
+	cd /d C:\DEV\OTUS\HW1\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 lib/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 preinstall
+	cd /d C:\DEV\OTUS\HW1\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 lib/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
+	cd /d C:\DEV\OTUS\HW1\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named lib
+# Convenience name for target.
+lib/CMakeFiles/lib.dir/rule:
+	cd /d C:\DEV\OTUS\HW1\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 lib/CMakeFiles/lib.dir/rule
+.PHONY : lib/CMakeFiles/lib.dir/rule
 
-# Build rule for target.
-lib: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 lib
+# Convenience name for target.
+lib: lib/CMakeFiles/lib.dir/rule
 .PHONY : lib
 
 # fast build rule for target.
 lib/fast:
-	$(MAKE) $(MAKESILENT) -f lib\CMakeFiles\lib.dir\build.make lib/CMakeFiles/lib.dir/build
+	cd /d C:\DEV\OTUS\HW1\build && $(MAKE) $(MAKESILENT) -f lib\CMakeFiles\lib.dir\build.make lib/CMakeFiles/lib.dir/build
 .PHONY : lib/fast
 
-#=============================================================================
-# Target rules for targets named main
+lib.obj: lib.cpp.obj
+.PHONY : lib.obj
 
-# Build rule for target.
-main: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 main
-.PHONY : main
+# target to build an object file
+lib.cpp.obj:
+	cd /d C:\DEV\OTUS\HW1\build && $(MAKE) $(MAKESILENT) -f lib\CMakeFiles\lib.dir\build.make lib/CMakeFiles/lib.dir/lib.cpp.obj
+.PHONY : lib.cpp.obj
 
-# fast build rule for target.
-main/fast:
-	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\main.dir\build.make src/CMakeFiles/main.dir/build
-.PHONY : main/fast
+lib.i: lib.cpp.i
+.PHONY : lib.i
+
+# target to preprocess a source file
+lib.cpp.i:
+	cd /d C:\DEV\OTUS\HW1\build && $(MAKE) $(MAKESILENT) -f lib\CMakeFiles\lib.dir\build.make lib/CMakeFiles/lib.dir/lib.cpp.i
+.PHONY : lib.cpp.i
+
+lib.s: lib.cpp.s
+.PHONY : lib.s
+
+# target to generate assembly for a file
+lib.cpp.s:
+	cd /d C:\DEV\OTUS\HW1\build && $(MAKE) $(MAKESILENT) -f lib\CMakeFiles\lib.dir\build.make lib/CMakeFiles/lib.dir/lib.cpp.s
+.PHONY : lib.cpp.s
 
 # Help Target
 help:
@@ -150,7 +162,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... lib
-	@echo ... main
+	@echo ... lib.obj
+	@echo ... lib.i
+	@echo ... lib.s
 .PHONY : help
 
 
@@ -162,6 +176,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
+	cd /d C:\DEV\OTUS\HW1\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -1,3 +1,8 @@
-C:/DEV/OTUS/HW1/build/CMakeFiles/rebuild_cache.dir
-C:/DEV/OTUS/HW1/build/CMakeFiles/TEST.dir
 C:/DEV/OTUS/HW1/build/CMakeFiles/edit_cache.dir
+C:/DEV/OTUS/HW1/build/CMakeFiles/rebuild_cache.dir
+C:/DEV/OTUS/HW1/build/lib/CMakeFiles/lib.dir
+C:/DEV/OTUS/HW1/build/lib/CMakeFiles/edit_cache.dir
+C:/DEV/OTUS/HW1/build/lib/CMakeFiles/rebuild_cache.dir
+C:/DEV/OTUS/HW1/build/src/CMakeFiles/edit_cache.dir
+C:/DEV/OTUS/HW1/build/src/CMakeFiles/main.dir
+C:/DEV/OTUS/HW1/build/src/CMakeFiles/rebuild_cache.dir

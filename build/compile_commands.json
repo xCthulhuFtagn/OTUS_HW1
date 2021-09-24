@@ -1,12 +1,12 @@
 [
 {
-  "directory": "C:/DEV/OTUS/HW1/build",
-  "command": "C:\\MinGW\\bin\\mingw32-g++.exe  @CMakeFiles/TEST.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\TEST.dir\\main.cpp.obj -c C:\\DEV\\OTUS\\HW1\\main.cpp",
-  "file": "C:/DEV/OTUS/HW1/main.cpp"
+  "directory": "C:/DEV/OTUS/HW1/build/lib",
+  "command": "C:\\MinGW\\bin\\mingw32-g++.exe  @CMakeFiles/lib.dir/includes_CXX.rsp -g -o CMakeFiles\\lib.dir\\lib.cpp.obj -c C:\\DEV\\OTUS\\HW1\\lib\\lib.cpp",
+  "file": "C:/DEV/OTUS/HW1/lib/lib.cpp"
 },
 {
-  "directory": "C:/DEV/OTUS/HW1/build",
-  "command": "C:\\MinGW\\bin\\mingw32-g++.exe  @CMakeFiles/TEST.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\TEST.dir\\head.cpp.obj -c C:\\DEV\\OTUS\\HW1\\head.cpp",
-  "file": "C:/DEV/OTUS/HW1/head.cpp"
+  "directory": "C:/DEV/OTUS/HW1/build/src",
+  "command": "C:\\MinGW\\bin\\mingw32-g++.exe  @CMakeFiles/main.dir/includes_CXX.rsp -g -o CMakeFiles\\main.dir\\main.cpp.obj -c C:\\DEV\\OTUS\\HW1\\src\\main.cpp",
+  "file": "C:/DEV/OTUS/HW1/src/main.cpp"
 }
 ]

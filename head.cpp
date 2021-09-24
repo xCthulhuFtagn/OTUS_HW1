@@ -6,5 +6,5 @@
 using namespace std;
 
 void PrintVersion(){
-    cout << "Project version is " << (PROJECT_VERSION_PATCH) << endl;
+    cout << "Version: " << (PROJECT_VERSION_PATCH) << endl;
 }

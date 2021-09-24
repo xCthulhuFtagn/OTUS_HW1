@@ -22,6 +22,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "C:/Program Files/CMake/share/cmake-3.21/Modules/CMakeRCInformation.cmake"
   "C:/Program Files/CMake/share/cmake-3.21/Modules/CMakeSystemSpecificInformation.cmake"
   "C:/Program Files/CMake/share/cmake-3.21/Modules/CMakeSystemSpecificInitialize.cmake"
+  "C:/Program Files/CMake/share/cmake-3.21/Modules/CPack.cmake"
+  "C:/Program Files/CMake/share/cmake-3.21/Modules/CPackComponent.cmake"
   "C:/Program Files/CMake/share/cmake-3.21/Modules/Compiler/CMakeCommonCompilerMacros.cmake"
   "C:/Program Files/CMake/share/cmake-3.21/Modules/Compiler/GNU-C.cmake"
   "C:/Program Files/CMake/share/cmake-3.21/Modules/Compiler/GNU-CXX.cmake"
@@ -34,6 +36,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "C:/Program Files/CMake/share/cmake-3.21/Modules/Platform/Windows-windres.cmake"
   "C:/Program Files/CMake/share/cmake-3.21/Modules/Platform/Windows.cmake"
   "C:/Program Files/CMake/share/cmake-3.21/Modules/Platform/WindowsPaths.cmake"
+  "C:/Program Files/CMake/share/cmake-3.21/Templates/CPackConfig.cmake.in"
   )
 
 # The corresponding makefile is:
@@ -45,6 +48,8 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "config.h"
+  "CPackConfig.cmake"
+  "CPackSourceConfig.cmake"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 

@@ -20,3 +20,7 @@ target_include_directories(
     PRIVATE
     ${CMAKE_CURRENT_BINARY_DIR}
 )
+
+SET(CPACK_GENERATOR "DEB")
+SET(CPACK_DEBIAN_PACKAGE_MAINTAINER "KK") #required
+INCLUDE(CPack)

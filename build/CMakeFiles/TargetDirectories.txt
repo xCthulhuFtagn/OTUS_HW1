@@ -1,5 +1,0 @@
-C:/DEV/OTUS/HW1/build/CMakeFiles/rebuild_cache.dir
-C:/DEV/OTUS/HW1/build/CMakeFiles/TEST.dir
-C:/DEV/OTUS/HW1/build/CMakeFiles/package.dir
-C:/DEV/OTUS/HW1/build/CMakeFiles/package_source.dir
-C:/DEV/OTUS/HW1/build/CMakeFiles/edit_cache.dir

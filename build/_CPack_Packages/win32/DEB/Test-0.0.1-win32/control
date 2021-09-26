@@ -1,9 +1,0 @@
-Architecture: 
-Description: Test built using CMake
-Maintainer: KK
-Package: test
-Priority: optional
-Section: devel
-Version: 0.0.1
-Installed-Size: 0
-

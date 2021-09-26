@@ -14,7 +14,8 @@ jobs:
         with:
           submodules: true
       - run: sudo apt-get update && sudo apt-get install libboost-test-dev -y
-      - run: cd build && cmake .. -DPATCH_VERSION=${{ github.run_number }}
+      - run: cd .. && ls -lah && cd OTUS_HW1 && ls -lah
+      - run: cmake . -DPATCH_VERSION=${{ github.run_number }}
       - run: cmake --build .
       - run: cmake --build . --target test
       - run: cmake --build . --target package

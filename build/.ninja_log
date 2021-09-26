@@ -1,0 +1,5 @@
+# ninja log v5
+10	1047	6543793052126532	src/CMakeFiles/main.dir/main.cpp.obj	f6ea51e73c26ea9e
+0	1456	6543793056216547	lib/CMakeFiles/lib.dir/lib.cpp.obj	61f4f4bd310ef164
+1457	1806	6543793059737197	lib/liblib.a	9c8e9736e79ee59d
+1806	2086	6543793062487235	src/main.exe	c720ee56b94b4807

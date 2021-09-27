@@ -1,0 +1,9 @@
+Architecture: 
+Description: Test built using CMake
+Maintainer: example@example.com
+Package: test
+Priority: optional
+Section: devel
+Version: 0.0.2
+Installed-Size: 0
+

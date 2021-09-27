@@ -16,6 +16,7 @@ jobs:
       - run: sudo apt-get update && sudo apt-get install libboost-test-dev -y
       - run: cmake . -DPATCH_VERSION=${{ github.run_number }}
       - run: cmake --build .
+      - run: cpack
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1
@@ -33,6 +34,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./TEST-0.0.${{ github.run_number }}-Linux.deb
-          asset_name: TEST-0.0.${{ github.run_number }}-Linux.deb
+          asset_path: ./Test-0.0.${{ github.run_number }}-Linux.deb
+          asset_name: Test-0.0.${{ github.run_number }}-Linux.deb
           asset_content_type: application/vnd.debian.binary-package

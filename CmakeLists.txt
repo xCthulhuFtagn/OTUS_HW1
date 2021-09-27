@@ -1,9 +1,9 @@
 cmake_minimum_required(VERSION 3.0)
 
-set(PATCH_VERSION "1" CACHE INTERNAL "Patch version")
-set(PROJECT_VESRION 0.0.${PATCH_VERSION})
+set(PATCH_VERSION CACHE INTERNAL "Patch version")
+set(PROJECT_VERSION 0.0.${PATCH_VERSION})
 
-project(Test VERSION ${PROJECT_VESRION})
+project(Test VERSION ${PROJECT_VERSION})
 
 
 configure_file(config.h.in  ${CMAKE_CURRENT_BINARY_DIR}/config.h)

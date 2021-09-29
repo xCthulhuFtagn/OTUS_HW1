@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - master
+      - HW1.2
       - feature/github_actions
 
 jobs:

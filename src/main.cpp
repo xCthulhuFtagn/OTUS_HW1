@@ -5,13 +5,14 @@
 using namespace std;
 
 int main(){ 
-    vector<vector<string>> ans;
+    vector<vector<vector<string>>> ans;
     ans = SortInput();
     for(auto line : ans){
         for(auto el : line){
-            for (auto i = 0; i < el.size(); ++i){
+            size_t size = el.size();
+            for (auto i = 0; i < size; ++i){
                 cout << el[i];
-                if(i>0) cout << ".";
+                if(i!=size-1) cout << ".";
             }
             cout << '\t';
         }

@@ -8,28 +8,26 @@ using namespace std;
 vector<string> split(string input, char delim){
     size_t len;
     vector<string> ans;
-    while((len = input.find_first_of("\t"))!=string::npos){
-        len += 1;
+    while((len = input.find_first_of(delim, 0))!=string::npos){
         auto front = input.begin();
-        ans.push_back(input.substr(len));
-        input.erase(front, front + len);
+        ans.push_back(input.substr(0, len));
+        input.erase(front, front + len + 1);
     }
     ans.push_back(input);
     return ans;
 }
 
-vector<vector<string>> SortInput(){
-    vector<vector<string>> storage; 
+vector<vector<vector<string>>> SortInput(){
+    vector<vector<vector<string>>> storage; 
     string buf;
     //creating a storage of strings, which contain IPs
     size_t len;
-    while(getline(cin, buf)){
-        vector<string> tmp = split(buf, '.');
-        storage.push_back(tmp);
+    for (size_t i = 0; getline(cin, buf); ++i){
+        storage.resize(i + 1);
+        vector<string> tmp = split(buf, '\t');
+        for (auto el : tmp) storage[i].push_back(split(el, '.'));
+        sort(storage[i].rbegin(), storage[i].rend());
     }
     //sorting it backwards
-    for(auto el : storage){
-        sort(el.rbegin(), el.rend());
-    }
     return storage;
 }

@@ -1,6 +1,10 @@
 cmake_minimum_required(VERSION 3.0)
 
-project(MAIN VERSION 0.0.1)
+set(PATCH_VERSION CACHE INTERNAL "Patch version")
+set(PROJECT_VERSION 0.0.${PATCH_VERSION})
+project(MAIN VERSION ${PROJECT_VERSION})
+
+configure_file(config.h.in ${CMAKE_CURRENT_BINARY_DIR}/config.h)
 
 add_executable(main main.cpp)
 

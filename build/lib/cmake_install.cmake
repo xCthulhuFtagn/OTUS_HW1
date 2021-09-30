@@ -1,4 +1,4 @@
-# Install script for directory: C:/DEV/OTUS/HW1/lib
+# Install script for directory: E:/DEV_Workspaces/From_VStudio/OTUS/HW1/OTUS_HW1/lib
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,6 +34,6 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "C:/MinGW/bin/objdump.exe")
+  set(CMAKE_OBJDUMP "E:/mingw64/bin/objdump.exe")
 endif()
 

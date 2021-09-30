@@ -1,0 +1,2 @@
+
+#cmake_define PATCH_VERSION @PATCH_VERSION@

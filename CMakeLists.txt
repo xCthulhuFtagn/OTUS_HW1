@@ -1,13 +1,11 @@
 cmake_minimum_required(VERSION 3.0)
 
-set(PATCH_VERSION CACHE INTERNAL "Patch version")
+set(PATCH_VERSION "1" CACHE INTERNAL "Patch version")
 set(PROJECT_VERSION 0.0.${PATCH_VERSION})
 project(IP_sort VERSION ${PROJECT_VERSION})
 
 add_subdirectory(lib)
 add_subdirectory(src)
-
-enable_testing()
 
 SET(CPACK_GENERATOR "DEB")
 SET(CPACK_PACKAGE_VERSION_MAJOR "${PROJECT_VERSION_MAJOR}")

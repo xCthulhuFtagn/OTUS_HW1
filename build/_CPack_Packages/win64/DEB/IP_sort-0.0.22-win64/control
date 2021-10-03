@@ -1,9 +1,0 @@
-Architecture: 
-Description: IP_sort built using CMake
-Maintainer: example@example.com
-Package: ip_sort
-Priority: optional
-Section: devel
-Version: 0.0.22
-Installed-Size: 0
-

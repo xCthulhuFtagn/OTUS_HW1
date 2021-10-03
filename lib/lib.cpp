@@ -1,7 +1,6 @@
 #include "lib.h"
 
 #include <iostream>
-#include <algorithm>
 
 using namespace std;
 
@@ -17,8 +16,10 @@ vector<string> split(string input, char delim){
     return ans;
 }
 
-vector<vector<vector<string>>> SortInput(){
-    vector<vector<vector<string>>> storage; 
+using lines_of_IPs = vector<vector<vector<string>>>;
+
+lines_of_IPs ConfigureInput(){
+    lines_of_IPs storage; 
     string buf;
     //creating a storage of strings, which contain IPs
     size_t len;
@@ -26,8 +27,21 @@ vector<vector<vector<string>>> SortInput(){
         storage.resize(i + 1);
         vector<string> tmp = split(buf, '\t');
         for (auto el : tmp) storage[i].push_back(split(el, '.'));
-        sort(storage[i].rbegin(), storage[i].rend());
     }
-    //sorting it backwards
     return storage;
+}
+
+void PrintIf(function<bool(std::vector<std::string>)> cond, const lines_of_IPs& input){
+    for(auto line : input){
+        for(auto el : line){
+            if(cond(el)){
+                size_t size = el.size();
+                for (auto i = 0; i < size; ++i){
+                    cout << el[i];
+                    if(i!=size-1) cout << ".";
+                }
+                cout << '\n';
+            }
+        }
+    }
 }

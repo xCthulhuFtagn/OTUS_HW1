@@ -1,5 +1,0 @@
-E:/DEV_Workspaces/From_VStudio/OTUS/OTUS_HW1/build/CMakeFiles/rebuild_cache.dir
-E:/DEV_Workspaces/From_VStudio/OTUS/OTUS_HW1/build/CMakeFiles/TEST.dir
-E:/DEV_Workspaces/From_VStudio/OTUS/OTUS_HW1/build/CMakeFiles/package.dir
-E:/DEV_Workspaces/From_VStudio/OTUS/OTUS_HW1/build/CMakeFiles/package_source.dir
-E:/DEV_Workspaces/From_VStudio/OTUS/OTUS_HW1/build/CMakeFiles/edit_cache.dir

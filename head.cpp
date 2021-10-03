@@ -3,8 +3,6 @@
 
 #include <iostream>
 
-using namespace std;
-
 void PrintVersion(){
-    cout << "Version: " << (PROJECT_VERSION_PATCH) << endl;
+    std::cout << "Version: " << (PROJECT_VERSION_PATCH) << std::endl;
 }

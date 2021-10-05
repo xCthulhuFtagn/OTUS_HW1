@@ -26,7 +26,10 @@ lines_of_IPs ConfigureInput(){
     for (size_t i = 0; getline(cin, buf); ++i){
         storage.resize(i + 1);
         vector<string> tmp = split(buf, '\t');
-        for (auto el : tmp) storage[i].push_back(split(el, '.'));
+        for (auto el : tmp) {
+            vector<string> tmp1 = split(el, '.');
+            if(tmp1.size() == 4)    storage[i].push_back(tmp1);
+        }
     }
     return storage;
 }

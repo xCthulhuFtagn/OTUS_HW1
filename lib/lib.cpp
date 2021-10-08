@@ -42,7 +42,7 @@ void PrintIf(function<bool(std::vector<int>)> cond, const lines_of_IPs& input){
         if(cond(el)){
             size_t size = el.size();
             for (auto i = 0; i < size; ++i){
-                cout << (int)el[i];
+                cout << el[i];
                 if(i!=size-1) cout << ".";
             }
             cout << '\n';

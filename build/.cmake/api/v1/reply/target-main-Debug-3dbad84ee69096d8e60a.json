@@ -65,11 +65,11 @@
 			[
 				{
 					"backtrace" : 3,
-					"path" : "C:/DEV/OTUS/HW1/OTUS_HW1/build/src"
+					"path" : "E:/DEV_Workspaces/From_VStudio/OTUS/HW1/OTUS_HW1/build/src"
 				},
 				{
 					"backtrace" : 4,
-					"path" : "C:/DEV/OTUS/HW1/OTUS_HW1/src/../lib"
+					"path" : "E:/DEV_Workspaces/From_VStudio/OTUS/HW1/OTUS_HW1/src/../lib"
 				}
 			],
 			"language" : "CXX",
@@ -101,7 +101,7 @@
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "..\\lib\\liblib.a",
+				"fragment" : "lib\\liblib.a",
 				"role" : "libraries"
 			},
 			{

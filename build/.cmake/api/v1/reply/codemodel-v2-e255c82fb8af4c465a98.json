@@ -95,14 +95,14 @@
 				{
 					"directoryIndex" : 1,
 					"id" : "lib::@306ed2d68c6501e8728f",
-					"jsonFile" : "target-lib-Debug-af279dabcef5e3eed9cf.json",
+					"jsonFile" : "target-lib-Debug-1556fa6ceea04a9abcc7.json",
 					"name" : "lib",
 					"projectIndex" : 1
 				},
 				{
 					"directoryIndex" : 2,
 					"id" : "main::@145eef247bfb46b6828c",
-					"jsonFile" : "target-main-Debug-f7e378c1393f0ef021a0.json",
+					"jsonFile" : "target-main-Debug-3dbad84ee69096d8e60a.json",
 					"name" : "main",
 					"projectIndex" : 2
 				}
@@ -112,8 +112,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/DEV/OTUS/HW1/OTUS_HW1/build",
-		"source" : "C:/DEV/OTUS/HW1/OTUS_HW1"
+		"build" : "E:/DEV_Workspaces/From_VStudio/OTUS/HW1/OTUS_HW1/build",
+		"source" : "E:/DEV_Workspaces/From_VStudio/OTUS/HW1/OTUS_HW1"
 	},
 	"version" : 
 	{

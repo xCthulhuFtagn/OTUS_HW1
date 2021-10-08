@@ -17,7 +17,7 @@ vector<string> split(string input, char delim){
     return ans;
 }
 
-using lines_of_IPs = vector<vector<char>>;
+using lines_of_IPs = vector<vector<int>>;
 
 lines_of_IPs ConfigureInput(){
     lines_of_IPs storage; 
@@ -28,7 +28,7 @@ lines_of_IPs ConfigureInput(){
         vector<string> tmp = split(buf, '\t');
         for (auto el : tmp) {
             vector<string> tmp1 = split(el, '.');
-            vector<char> v;
+            vector<int> v;
             transform(tmp1.begin(), tmp1.end(), back_inserter(v), [](string& s){
                 return stoi(s); });
             if(tmp1.size() == 4)    storage.push_back(v);
@@ -37,15 +37,16 @@ lines_of_IPs ConfigureInput(){
     return storage;
 }
 
-void PrintIf(function<bool(std::vector<char>)> cond, const lines_of_IPs& input){
+void PrintIf(function<bool(std::vector<int>)> cond, const lines_of_IPs& input){
     for(const auto& el : input){
         if(cond(el)){
             size_t size = el.size();
             for (auto i = 0; i < size; ++i){
-                cout << int(el[i]);
+                cout << (int)el[i];
                 if(i!=size-1) cout << ".";
             }
             cout << '\n';
         }
     }
 }
+

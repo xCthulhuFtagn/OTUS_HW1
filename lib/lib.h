@@ -4,8 +4,8 @@
 #include <vector>
 #include <functional>
 
-using lines_of_IPs = std::vector<std::vector<std::vector<std::string>>>;
+using lines_of_IPs = std::vector<std::vector<char>>;
 
 lines_of_IPs ConfigureInput();
 
-void PrintIf(std::function<bool(std::vector<std::string>)>, const lines_of_IPs&);
+void PrintIf(std::function<bool(std::vector<char>)>, const lines_of_IPs&);

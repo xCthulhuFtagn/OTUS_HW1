@@ -1,6 +1,7 @@
 #include "lib.h"
 
 #include <iostream>
+#include <algorithm>
 
 using namespace std;
 
@@ -16,35 +17,35 @@ vector<string> split(string input, char delim){
     return ans;
 }
 
-using lines_of_IPs = vector<vector<vector<string>>>;
+using lines_of_IPs = vector<vector<char>>;
 
 lines_of_IPs ConfigureInput(){
     lines_of_IPs storage; 
     string buf;
     //creating a storage of strings, which contain IPs
     size_t len;
-    for (size_t i = 0; getline(cin, buf); ++i){
-        storage.resize(i + 1);
+    while (getline(cin, buf)){
         vector<string> tmp = split(buf, '\t');
         for (auto el : tmp) {
             vector<string> tmp1 = split(el, '.');
-            if(tmp1.size() == 4)    storage[i].push_back(tmp1);
+            vector<char> v;
+            transform(tmp1.begin(), tmp1.end(), back_inserter(v), [](string& s){
+                return stoi(s); });
+            if(tmp1.size() == 4)    storage.push_back(v);
         }
     }
     return storage;
 }
 
-void PrintIf(function<bool(std::vector<std::string>)> cond, const lines_of_IPs& input){
-    for(auto line : input){
-        for(auto el : line){
-            if(cond(el)){
-                size_t size = el.size();
-                for (auto i = 0; i < size; ++i){
-                    cout << el[i];
-                    if(i!=size-1) cout << ".";
-                }
-                cout << '\n';
+void PrintIf(function<bool(std::vector<char>)> cond, const lines_of_IPs& input){
+    for(const auto& el : input){
+        if(cond(el)){
+            size_t size = el.size();
+            for (auto i = 0; i < size; ++i){
+                cout << int(el[i]);
+                if(i!=size-1) cout << ".";
             }
+            cout << '\n';
         }
     }
 }
